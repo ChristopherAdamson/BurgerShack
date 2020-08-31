@@ -1,0 +1,5 @@
+C:\Users\Pacolaco\BurgerShack\obj\Debug\netcoreapp3.1\BurgerShack.csprojAssemblyReference.cache
+C:\Users\Pacolaco\BurgerShack\obj\Debug\netcoreapp3.1\BurgerShack.AssemblyInfoInputs.cache
+C:\Users\Pacolaco\BurgerShack\obj\Debug\netcoreapp3.1\BurgerShack.AssemblyInfo.cs
+C:\Users\Pacolaco\BurgerShack\obj\Debug\netcoreapp3.1\BurgerShack.csproj.CoreCompileInputs.cache
+C:\Users\Pacolaco\BurgerShack\obj\Debug\netcoreapp3.1\BurgerShack.MvcApplicationPartsAssemblyInfo.cache

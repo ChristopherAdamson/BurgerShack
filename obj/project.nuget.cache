@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "sL3U2RAaSCNeST09Ll362ZynHlqLV3aodCxvN15RRyIkWyegpju6EL7k5FWqGV0LOwPSsq2y6UkJP0297bXsqw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Pacolaco\\BurgerShack\\BurgerShack.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Pacolaco\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
+    "C:\\Users\\Pacolaco\\.nuget\\packages\\mysqlconnector\\1.0.1\\mysqlconnector.1.0.1.nupkg.sha512",
+    "C:\\Users\\Pacolaco\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
