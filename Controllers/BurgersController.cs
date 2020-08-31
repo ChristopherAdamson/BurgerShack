@@ -24,7 +24,7 @@ namespace BurgerShack.Controllers
     {
       try
       {
-        IEnumerable<Burger> burgers = _burgerService.GetBurgers();
+        IEnumerable<Burger> burgers = _burgerService.Get();
         return Ok(burgers);
       }
       catch (Exception err)

@@ -1,21 +1,21 @@
 using System;
 using System.Collections.Generic;
-using BurgerShack.BurgersRepositories;
 using BurgerShack.Models;
+using BurgersShack.Repositories;
 
 namespace BurgerShack.Services
 {
   public class BurgersService
   {
-    private readonly BlogsRepository _repo;
-    public BurgersService(BlogsRepository repo)
+    private readonly BurgersRepository _repo;
+    public BurgersService(BurgersRepository repo)
     {
       _repo = repo;
     }
 
-    public IEnumerable<Burger> GetBurgers()
+    public IEnumerable<Burger> Get()
     {
-      throw new NotImplementedException();
+      return _repo.Get();
     }
   }
 }
