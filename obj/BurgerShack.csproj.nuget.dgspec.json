@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pacolaco\\BurgerShack\\BurgerShack.csproj": {}
+    "C:\\source\\codeworks\\BurgerShack\\BurgerShack.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pacolaco\\BurgerShack\\BurgerShack.csproj": {
+    "C:\\source\\codeworks\\BurgerShack\\BurgerShack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pacolaco\\BurgerShack\\BurgerShack.csproj",
+        "projectUniqueName": "C:\\source\\codeworks\\BurgerShack\\BurgerShack.csproj",
         "projectName": "BurgerShack",
-        "projectPath": "C:\\Users\\Pacolaco\\BurgerShack\\BurgerShack.csproj",
+        "projectPath": "C:\\source\\codeworks\\BurgerShack\\BurgerShack.csproj",
         "packagesPath": "C:\\Users\\Pacolaco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pacolaco\\BurgerShack\\obj\\",
+        "outputPath": "C:\\source\\codeworks\\BurgerShack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pacolaco\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -16,3 +16,5 @@
 --   "Buns, Patty, Ketchup, Pickles, Lettuce",
 --   5
 -- )
+
+SELECT * FROM burgers

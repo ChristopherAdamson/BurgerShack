@@ -151,11 +151,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Pacolaco\\BurgerShack\\BurgerShack.csproj",
+      "projectUniqueName": "C:\\source\\codeworks\\BurgerShack\\BurgerShack.csproj",
       "projectName": "BurgerShack",
-      "projectPath": "c:\\Users\\Pacolaco\\BurgerShack\\BurgerShack.csproj",
+      "projectPath": "C:\\source\\codeworks\\BurgerShack\\BurgerShack.csproj",
       "packagesPath": "C:\\Users\\Pacolaco\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Pacolaco\\BurgerShack\\obj\\",
+      "outputPath": "C:\\source\\codeworks\\BurgerShack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pacolaco\\AppData\\Roaming\\NuGet\\NuGet.Config"

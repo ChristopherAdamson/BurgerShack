@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sL3U2RAaSCNeST09Ll362ZynHlqLV3aodCxvN15RRyIkWyegpju6EL7k5FWqGV0LOwPSsq2y6UkJP0297bXsqw==",
+  "dgSpecHash": "PuQzvKr67Eu6ombUyRCvVgxibg8n5KTkBKGc1J36B2A3MDJBj0lmQjRs8km83qwxhQOUwQ//RQ4V2wEvw+FMtw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pacolaco\\BurgerShack\\BurgerShack.csproj",
+  "projectFilePath": "C:\\source\\codeworks\\BurgerShack\\BurgerShack.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pacolaco\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
     "C:\\Users\\Pacolaco\\.nuget\\packages\\mysqlconnector\\1.0.1\\mysqlconnector.1.0.1.nupkg.sha512",
