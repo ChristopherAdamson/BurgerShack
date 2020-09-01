@@ -11,21 +11,21 @@ namespace BurgerShack.Controllers
 {
   [ApiController]
   [Route("api/[controller]")]
-  public class BurgersController : ControllerBase
+  public class SidesController : ControllerBase
   {
-    private readonly BurgersService _burgerService;
-    public BurgersController(BurgersService burgersService)
+    private readonly SidesService _sidesService;
+    public SidesController(SidesService sidesService)
     {
-      _burgerService = burgersService;
+      _sidesService = sidesService;
     }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Burger>> Get()
+    public ActionResult<IEnumerable<Side>> Get()
     {
       try
       {
-        IEnumerable<Burger> burgers = _burgerService.Get();
-        return Ok(burgers);
+        IEnumerable<Side> sides = _sidesService.Get();
+        return Ok(sides);
       }
       catch (Exception err)
       {
@@ -33,12 +33,12 @@ namespace BurgerShack.Controllers
       }
     }
     [HttpGet("{id}")]
-    public ActionResult<Burger> Get(int id)
+    public ActionResult<Side> Get(int id)
     {
       try
       {
-        Burger burgers = _burgerService.Get(id);
-        return Ok(burgers);
+        Side sides = _sidesService.Get(id);
+        return Ok(sides);
       }
       catch (Exception err)
       {
@@ -46,12 +46,12 @@ namespace BurgerShack.Controllers
       }
     }
     [HttpPost]
-    public ActionResult<Burger> Post([FromBody] Burger newBurger)
+    public ActionResult<Side> Post([FromBody] Side newSide)
     {
       try
       {
-        Burger burgers = _burgerService.Create(newBurger);
-        return Ok(burgers);
+        Side sides = _sidesService.Create(newSide);
+        return Ok(sides);
       }
       catch (Exception err)
       {
@@ -59,11 +59,11 @@ namespace BurgerShack.Controllers
       }
     }
     [HttpDelete("{id}")]
-    public ActionResult<Burger> Delete(int id)
+    public ActionResult<Side> Delete(int id)
     {
       try
       {
-        return Ok(_burgerService.Delete(id));
+        return Ok(_sidesService.Delete(id));
       }
       catch (Exception e)
       {
@@ -72,11 +72,11 @@ namespace BurgerShack.Controllers
       }
     }
     [HttpPut("{id}")]
-    public ActionResult<Burger> Edit([FromBody] Burger newBurger, int id)
+    public ActionResult<Side> Edit([FromBody] Side newSide, int id)
     {
       try
       {
-        return Ok(_burgerService.Edit(newBurger, id));
+        return Ok(_sidesService.Edit(newSide, id));
       }
       catch (Exception e)
       {

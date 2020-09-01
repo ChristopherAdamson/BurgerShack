@@ -34,5 +34,22 @@ namespace BurgerShack.Services
       return newBurger;
 
     }
+
+    internal Burger Delete(int id)
+    {
+      Burger exists = Get(id);
+      _repo.Delete(id);
+      return exists;
+    }
+
+    public Burger Edit(Burger newBurger, int id)
+    {
+      Burger original = Get(id);
+      original.Title = newBurger.Title == null ? original.Title : newBurger.Title;
+      original.Ingredients = newBurger.Ingredients == null ? original.Ingredients : newBurger.Ingredients;
+      original.Price = newBurger.Price > 0 ? newBurger.Price : original.Price;
+      return _repo.Edit(original);
+
+    }
   }
 }

@@ -34,5 +34,25 @@ namespace BurgersShack.Repositories
       SELECT LAST_INSERT_ID();";
       return _db.ExecuteScalar<int>(sql, newBurger);
     }
+
+    public void Delete(int id)
+    {
+      string sql = @"DELETE FROM burgers WHERE id = @id";
+      _db.Execute(sql, new { id });
+    }
+
+    public Burger Edit(Burger original)
+    {
+      string sql = @"
+     UPDATE burgers
+     SET
+        title = @Title,
+        ingredients = @Ingredients,
+        price = @Price
+      Where id = @Id;
+     SELECT * FROM burgers WHERE id = @id;";
+      return _db.QueryFirstOrDefault<Burger>(sql, original);
+
+    }
   }
 }
