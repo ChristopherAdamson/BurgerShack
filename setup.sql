@@ -17,4 +17,25 @@
 --   5
 -- )
 
-SELECT * FROM burgers
+-- CREATE TABLE sides(
+--   id INT NOT NULL AUTO_INCREMENT,
+--   title VARCHAR(80),
+--   price decimal(6,2) NOT NULL,
+--   PRIMARY KEY(id)
+-- )
+
+-- ALTER TABLE burgers
+-- MODIFY COLUMN Price decimal(6,2);
+
+-- CREATE TABLE combos(
+--   id int AUTO_INCREMENT,
+--   burgerId int NOT NULL,
+--   sideId int NOT NULL,
+--   PRIMARY KEY (id),
+--   FOREIGN KEY(burgerId)
+--     REFERENCES burgers(id)
+--     ON DELETE CASCADE,
+--   FOREIGN KEY(sideId)
+--     REFERENCES sides(id)
+--     ON DELETE CASCADE
+-- )

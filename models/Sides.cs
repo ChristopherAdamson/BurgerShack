@@ -9,7 +9,12 @@ namespace BurgerShack.Models
     [MaxLength(80)]
     public string Title { get; set; }
     [Required]
-    public int Price { get; set; }
+    public decimal Price { get; set; }
 
+  }
+  public class ComboViewModel : Side
+  {
+    public string burgerName { get; set; }
+    public string sideName { get; set; }
   }
 }

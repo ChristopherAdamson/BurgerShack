@@ -14,6 +14,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using MySqlConnector;
 using BurgersShack.Repositories;
+using BurgerShack.Repositories;
 
 namespace BurgerShack
 {
@@ -33,6 +34,10 @@ namespace BurgerShack
       services.AddScoped<IDbConnection>(x => CreateDbConnection());
       services.AddTransient<BurgersService>();
       services.AddTransient<BurgersRepository>();
+      services.AddTransient<SidesService>();
+      services.AddTransient<SidesRepository>();
+      services.AddTransient<CombosService>();
+      services.AddTransient<CombosRepository>();
 
     }
     private IDbConnection CreateDbConnection()

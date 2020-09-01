@@ -14,9 +14,11 @@ namespace BurgerShack.Controllers
   public class BurgersController : ControllerBase
   {
     private readonly BurgersService _burgerService;
-    public BurgersController(BurgersService burgersService)
+    private readonly CombosService _comboService;
+    public BurgersController(BurgersService burgersService, CombosService comboService)
     {
       _burgerService = burgersService;
+      _comboService = comboService;
     }
 
     [HttpGet]
@@ -43,6 +45,19 @@ namespace BurgerShack.Controllers
       catch (Exception err)
       {
         return BadRequest(err.Message);
+      }
+    }
+    [HttpGet("{id}/combos")]
+    public ActionResult<ComboViewModel> GetComboByBurgerId(int burgerId)
+    {
+      try
+      {
+        return Ok(_comboService.getComboByBurgerId(burgerId));
+      }
+      catch (Exception e)
+      {
+
+        return BadRequest(e.Message);
       }
     }
     [HttpPost]
