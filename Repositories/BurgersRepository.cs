@@ -18,5 +18,21 @@ namespace BurgersShack.Repositories
       string sql = "SELECT * FROM burgers";
       return _db.Query<Burger>(sql);
     }
+
+    public Burger Get(int id)
+    {
+      string sql = "SELECT * FROM burgers WHERE id = @id";
+      return _db.QueryFirstOrDefault<Burger>(sql, new { id });
+    }
+
+    public int Create(Burger newBurger)
+    {
+      string sql = @"iNSERT INTO burgers 
+      (title, ingredients, price)
+      VALUES
+      (@Title, @Ingredients, @Price);
+      SELECT LAST_INSERT_ID();";
+      return _db.ExecuteScalar<int>(sql, newBurger);
+    }
   }
 }

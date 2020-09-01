@@ -32,5 +32,31 @@ namespace BurgerShack.Controllers
         return BadRequest(err.Message);
       }
     }
+    [HttpGet("{id}")]
+    public ActionResult<Burger> Get(int id)
+    {
+      try
+      {
+        Burger burgers = _burgerService.Get(id);
+        return Ok(burgers);
+      }
+      catch (Exception err)
+      {
+        return BadRequest(err.Message);
+      }
+    }
+    [HttpPost]
+    public ActionResult<Burger> Post([FromBody] Burger newBurger)
+    {
+      try
+      {
+        Burger burgers = _burgerService.Create(newBurger);
+        return Ok(burgers);
+      }
+      catch (Exception err)
+      {
+        return BadRequest(err.Message);
+      }
+    }
   }
 }

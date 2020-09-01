@@ -17,5 +17,22 @@ namespace BurgerShack.Services
     {
       return _repo.Get();
     }
+    public Burger Get(int id)
+    {
+      Burger burger = _repo.Get(id);
+      if (burger == null)
+      {
+        throw new Exception("Burger not found");
+      }
+      return burger;
+    }
+
+    public Burger Create(Burger newBurger)
+    {
+      int id = _repo.Create(newBurger);
+      newBurger.Id = id;
+      return newBurger;
+
+    }
   }
 }
